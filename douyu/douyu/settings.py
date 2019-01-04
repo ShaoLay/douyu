@@ -88,3 +88,11 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+ITEM_PIPELINES = {'douyuSpider.pipelines.ImagesPipeline': 1}
+
+# Images 的存放位置，之后会在pipelines.py里调用
+IMAGES_STORE = "/Users/Power/lesson_python/douyuSpider/Images"
+
+# user-agent
+USER_AGENT = 'DYZB/2.290 (iPhone; iOS 9.3.4; Scale/2.00)'
