@@ -11,4 +11,6 @@ import scrapy
 class DouyuItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    name = scrapy.Field()
+    images_urls = scrapy.Field()
+    images_path = scrapy.Field()
